@@ -26,6 +26,22 @@ An introductory Apache Spark workshop using PySpark and Jupyter notebooks, desig
 2. Press `.` (period) to open in github.dev, then switch to Codespaces
 3. Or use the URL: `https://codespaces.new/YOUR_USERNAME/spark-workshop-labs`
 
+## CHANGE JAVA VERSION:
+```bash
+# check java version, should be 25 by default
+java --version
+```
+```bash
+# Install Jdk 17
+sudo apt-get update
+sudo apt-get install -y openjdk-17-jdk
+```
+```bash
+# set java path and validate the version again, now set to JDK 17
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
 ## 📓 Running the Jupyter Notebook
 
 ### In Codespaces (VS Code in Browser)
